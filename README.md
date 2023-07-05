@@ -24,10 +24,10 @@
 
 
 
-# 📖 Portfolio! <a name="about-project"></a>
+# 📖 Capstone Project! <a name="about-project"></a>
 
-> This is my first responsive portfolio project with Microverse using Github professional flow with the objective of start practicing the professional way to work with CSS and HTML in responsive design, using the basic structure, data query, flexbox and all following a template in Figma.
-**Portfolio** 
+> Capstone Project is designed to provide information and resources to students, faculty members, and university visitors, showcasing the academic programs and research opportunities available. Built with HTML, CSS, and JavaScript. The main objective of this project is to start practicing the professional way to work with CSS HTML and JavaScript in responsive design, using the basic structure, data query, flexbox and all following a template in Behance.
+**Capstone Project** 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,6 +37,7 @@
   <ul>
    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -63,7 +64,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+If you would like to get a local copy up and running, please follow these steps.
 
 ### Prerequisites
 
@@ -79,7 +80,7 @@ Clone this repository to your desired folder:
 
 Example commands:
 
-git clone https://github.com/afsheen96/Portfolio.git
+git clone https://github.com/afsheen96/Capstone-project-module-1.git
 
 
 ### Install
@@ -89,9 +90,9 @@ git clone https://github.com/afsheen96/Portfolio.git
 
 ### Usage
  
- - In order to use this project you create branch to add more feature.
-  - But in order to run the project use below commands. 
-    - npm run build (It will create a production ready file)
+ - In order to use this project you create a branch to add more features.
+  - But in order to run the project use the below commands. 
+    - npm run build (It will create a production-ready file)
     - npm start (It will run the server on your machine)
 
     
@@ -99,13 +100,16 @@ git clone https://github.com/afsheen96/Portfolio.git
 
 ### Run Linters
  
-I have added linters or tests in order to avoid typos and ensure good practice in this project.So while using this repository if you need to check your work no matters have worked on html, css and js you can use below commands
-- In order to run the linter test on `index.html` or any html file. use below command
+I have added linters or tests in order to avoid typos and ensure good practice in this project. So while using this repository if you need to check your work no matter have worked on HTML, CSS and js you can use the below commands
+- In order to run the linter test on `index.html` or any HTML file. use below command
 
-  `npx hint` .
+  `npx hint .`
 - To run linter test on stylesheets. Use below command
 
  ` npx stylelint "**/*.{css,scss}"`
+
+ -To run linter test on `index.js` or any JavaScript file. use below command
+ `npx eslint .`
 
 ### Deployment
  
@@ -120,10 +124,6 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 👤 **Afsheen**
 
 - GitHub: [@githubhandle](https://github.com/Afsheen96)
-
-👤 **NoelLincoln**
-
-- GitHub: [@githubhandle](https://github.com/NoelLincoln)
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +161,7 @@ people.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for their unique way of teach me how to code, and also Freecodecamp and w3school for their practical articles that helped me to
+I would like to thank Microverse for their unique way of teaching me how to code, and also Freecodecamp and w3school for their practical articles that helped me to
 make this project.
 
 
