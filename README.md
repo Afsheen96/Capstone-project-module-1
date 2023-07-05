@@ -108,7 +108,7 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 
  ` npx stylelint "**/*.{css,scss}"`
 
- -To run linter test on `index.js` or any JavaScript file. use below command
+- To run linter test on `index.js` or any JavaScript file. use below command
  `npx eslint .`
 
 ### Deployment
