@@ -168,3 +168,13 @@ ul {
 .program:hover {
     border: var(--white) solid 2px;
 }
+
+.more-program {
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.join-btn {
+    display: none;
+}
