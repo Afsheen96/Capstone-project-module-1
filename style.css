@@ -178,3 +178,6 @@ ul {
 .join-btn {
     display: none;
 }
+.more-program:hover {
+    color: var(--red);
+}
