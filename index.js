@@ -29,7 +29,7 @@ const speakersData = [
 const speakers = document.getElementById('speakers-container');
 if (speakers) {
     for (let i = 0; i < speakersData.length; i += 1) {
-      speakers.innerHTML += `
+        speakers.innerHTML += `
         <article class= "speakers-sample">
         <img class="speakers-images" src="${speakersData[i].speakerImage}" alt="Speaker Picture">
           <div class= "speakers-info">
@@ -40,4 +40,4 @@ if (speakers) {
           </div>
         </article>`;
     }
-  }
+}
