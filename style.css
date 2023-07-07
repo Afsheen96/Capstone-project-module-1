@@ -11,6 +11,7 @@
     --black: #272a31;
     --white: #fff;
     --red: #ec5242;
+    --grey: #d3d3d3;
 }
 
 a {
@@ -181,6 +182,7 @@ ul {
 .more-program:hover {
     color: var(--red);
 }
+
 /* MM */
 .speakers {
     display: flex;
@@ -188,42 +190,81 @@ ul {
     align-items: center;
     gap: 10px;
     padding: 20px;
-  }
-  
-  .speakers-container {
+}
+
+.speakers-container {
     padding-left: 200px;
     padding-right: 200px;
     display: grid;
     grid-template-columns: auto auto;
     padding-top: 25px;
-  }
-  
-  .speakers-sample {
+    padding-bottom: 7%;
+}
+
+.speakers-sample {
     display: flex;
-  }
-  
-  .speakers-images {
+}
+
+.speakers-images {
     width: 150px;
     height: 150px;
-  }
+}
 
-  .speakers-info {
+.speakers-info {
     width: 100%;
     float: right;
     padding-left: 10px;
-  }
-  
-  .speakers-name {
+}
+
+.speakers-name {
     color: #272a31;
-  }
-  
-  .speakers-company {
+}
+
+.speakers-company {
     color: var(--red);
-  }
-  
-  .speakers-subject {
+}
+
+.speakers-subject {
     font-size: 14px;
-  }
-  .line {
+}
+
+.line {
     width: 30px;
-  }
+}
+
+.sponsers {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.sponser-section {
+    display: block;
+}
+
+.sponser-list {
+    display: flex;
+    gap: 100px;
+    padding-inline: 5%;
+    padding-block: 4%;
+}
+
+.sponser-logo {
+    width: fit-content;
+    height: 36px;
+    object-fit: contain;
+}
+
+.sponser-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 4%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3%;
+}
