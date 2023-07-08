@@ -400,8 +400,9 @@ h4 {
 .footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 200px;
 }
 
 .footer-logo {
@@ -412,6 +413,7 @@ h4 {
 .copy-right {
   color: #272a31;
   font-size: 16px;
+  padding-left: 30px;
 }
 
 .fa-heart {
