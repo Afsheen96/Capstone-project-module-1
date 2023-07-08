@@ -1,43 +1,56 @@
+const menu = document.getElementById('menu');
 
-const speakersData = [
-    {
-        speakerName: 'Eugenia Cheng',
-        speakerDesignation: 'Software Engineer',
-        speakerDetail: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente',
-        speakerImage: './imgs/speaker1.png',
-    },
-    {
-        speakerName: 'Ronald Garcia',
-        speakerDesignation: 'University of British Columbia',
-        speakerDetail: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente',
-        speakerImage: './imgs/speaker2.png',
-    },
-    {
-        speakerName: 'Pat Hanrahan',
-        speakerDesignation: 'Stanford University, USA',
-        speakerDetail: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente',
-        speakerImage: './imgs/speaker3.png',
-    },
-    {
-        speakerName: 'Margo Seltzer',
-        speakerDesignation: 'Software Engineer',
-        speakerDetail: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente',
-        speakerImage: './imgs/speaker4.png',
-    },
+function openMenu() {
+  menu.style.display = 'flex';
+}
+
+function closeMenu() {
+  menu.style.display = 'none';
+}
+
+menu.addEventListener('click', openMenu);
+menu.addEventListener('click', closeMenu);
+const speakers = document.getElementById('speakers-container');
+
+const speakerData = [
+ 
+  {
+    img: './imgs/speaker1.png',
+    name: 'Bill Gates',
+    company: 'Software Engineer!',
+    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+  },
+  {
+    img: './imgs/speaker2.png',
+    name: 'Elon Musk',
+    company: 'Software Engineer!',
+    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+  },
+  {
+    img: './imgs/speaker3.png',
+    name: 'Steve Jobs',
+    company: 'Software Engineer!',
+    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+  },
+  {
+    img: './imgs/speaker4.png',
+    name: 'Zhao',
+    company: 'Software Engineer!',
+    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+  },
 ];
 
-const speakers = document.getElementById('speakers-container');
 if (speakers) {
-    for (let i = 0; i < speakersData.length; i += 1) {
-        speakers.innerHTML += `
-        <article class= "speakers-sample">
-        <img class="speakers-images" src="${speakersData[i].speakerImage}" alt="Speaker Picture">
-          <div class= "speakers-info">
-            <h3 class= "speakers-name">${speakersData[i].speakerName}</h3>
-            <p class= "speakers-company">${speakersData[i].speakerDesignation}</p>
-            <hr class="line">
-            <p class= "speakers-subject">${speakersData[i].speakerDetail}</p>
-          </div>
-        </article>`;
-    }
+  for (let i = 0; i < speakerData.length; i += 1) {
+    speakers.innerHTML += `
+      <article class= "speakers-sample">
+        <img src="${speakerData[i].img}" class="speakers-images" alt="speakers Gates photo">
+        <div class= "speakers-info">
+          <h3 class= "speakers-name">${speakerData[i].name}</h3>
+          <p class= "speakers-company">${speakerData[i].company}</p>
+          <div class="short-line"></div>
+          <p class= "speakers-subject">${speakerData[i].subject}</p>
+        </div>
+      </article>`;
+  }
 }
