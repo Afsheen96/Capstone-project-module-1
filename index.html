@@ -1,141 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/38b6d4ab77.js" crossorigin="anonymous"></script>
-    <title>ICFP Contest</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICFP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <script
+      src="https://kit.fontawesome.com/e520ead38a.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li>
-                    <a href="#" class="nav-link"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li><a href="#" class="nav-link">English</a></li>
-                <li><a href="#" class="nav-link">My Page</a></li>
-                <li><a href="#" class="nav-link">Logout</a></li>
-            </ul>
-        </nav>
-        <nav class="sub-navbar">
-            <a href="./index.html" class="logo"><img src="./imgs/logoimg.jpg" alt="ICFP-Logo" /></a>
-            <ul class=" nav-list">
-                <i class="fa-solid fa-xmark close-icon"></i>
-                <li><a href="./about.html" class=" nav-link">About</a></li>
-                <li><a href="#program-section" class=" nav-link">Program</a></li>
-                <li><a href="#join-btn" class=" nav-link">Join</a></li>
-                <li><a href="#partner" class=" nav-link">Sponser</a></li>
-                <li><a href="#" class=" nav-link">News</a></li>
-                <li><a href="#" class=" nav-btn">CC Campaign</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- main section -->
-    <section>
-        <section class="main-section">
-            <div class="main-container">
-                <a href="#" class="menu-icon"><i class="fa-solid fa-bars"></i></a>
+  <header>
+    <nav>
+      <div class="topnav">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <ul class="topnav-list">
+          <li class="top-links">English</li>
+          <li class="top-links">MyPage</li>
+          <li class="top-links">Logout</li>
+        </ul>
+      </div>
+      <div class="main-nav">
+        <img src="./imgs/logoimg.jpg" class="logo" alt="ICFP Logo">
+        <ul class="menu-mobile" id="menu">
+          <li class="mobile-menu-list" onclick="closeMenu()"><a href="./about.html">About</a></li>
+          <li class="mobile-menu-list" onclick="closeMenu()"><a href="#">Program</a></li>
+          <li class="mobile-menu-list" onclick="closeMenu()"><a href="#">Join</a></li>
+          <li class="mobile-menu-list" onclick="closeMenu()"><a href="#">Sponsor</a></li>
+          <li class="mobile-menu-list" onclick="closeMenu()"><a href="#">News</a></li>
+          <li><i class="fa-solid fa-xmark close" onclick="closeMenu()"></i></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu-list"><a href="./about.html">About</a></li>
+          <li class="menu-list"><a href="#">Program</a></li>
+          <li class="menu-list"><a href="#">Join</a></li>
+          <li class="menu-list"><a href="#">Sponsor</a></li>
+          <li class="menu-list"><a href="#">News</a></li>
+          <li><button type="button" class="button">CC Campaign</button></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars open" onclick="openMenu()"></i>
+    </nav>
+  </header>
+  <main>
+    <section class="body">
+      <article class="main-text">
+        <p class="intro">"Hello! Sharing world"</p>
+        <h1 class="title">International Conference <br>on Functional Programming.</h1>
+        <article class="information">
+          <p>ICFP Programming Contest is an annual programming contest organized under
+                    International Conference on Functional Programming.</p>
+        </article>
+        <article class="date">
+          <p class="date-info"><strong>2023.01.7(SAT) ~ 10(TUE)</strong></p>
+          <p class="date-para">@ New York, USA</p>
+        </article>
+      </article>
+    </section>
 
-                <h2 class="preheading">"Hello! Sharing World"</h2>
-                <h1 class="heading">
-                    <strong> International Conference <br>on Functional Programming.</strong>
-                </h1>
-                <p class="detail">ICFP Programming Contest is an annual programming contest organized under
-                    International Conference on Functional Programming.
-                </p>
-                <h3 class="date">2023.07.07(FRI) ~ 09(SUN)</h3>
-                <p>@ New York, USA</p>
-            </div>
-        </section>
-        <!-- main program section -->
-        <section id="program-section">
-            <div class="program-section">
-                <h2 class="headline">Main Program</h2>
-                <hr class="underline">
-                <ul class="program-container">
-                    <li class="program">
-                        <i class="fa-solid fa-person-chalkboard program-icon"></i>
-                        <h3 class="program-title">Exhibition</h3>
-                        <p class="program-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente
-                            nesciunt dolores!</p>
-                    </li>
-                    <li class="program">
-                        <i class="fa-solid fa-comment program-icon"></i>
-                        <h3 class="program-title">Forum</h3>
-                        <p class="program-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente
-                            nesciunt dolores!</p>
-                    </li>
-                    <li class="program">
-                        <i class="fa-solid fa-comments-dollar program-icon"></i>
-                        <h3 class="program-title">Community</h3>
-                        <p class="program-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente
-                            nesciunt dolores!</p>
-                    </li>
-                    <li class="program">
-                        <i class="fa-solid fa-laptop program-icon"></i>
-                        <h3 class="program-title">Workshop</h3>
-                        <p class="program-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente
-                            nesciunt dolores!</p>
-                    </li>
-                    <li class="program">
-                        <i class="fa-solid fa-handshake-angle program-icon"></i>
-                        <h3 class="program-title">Feedback</h3>
-                        <p class="program-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente
-                            nesciunt dolores!</p>
-                    </li>
-                </ul>
-                <a href="#" class="more-program">SEE THE WHOLE PROGRAM</a>
-                <button class="join-btn" id="join-btn">Join ICPC 2023</button>
-            </div>
-        </section>
-        <!-- feature speaker section -->
-        <section>
-            <div class="speakers" id="speakers">
-                <h2>Featured Speakers</h2>
-                <hr class="underline">
-            </div>
-            <div class="speakers-container" id="speakers-container"></div>
-        </section>
-        <!-- partner section -->
-        <section class="sponsers sponser-section" id="partner">
-            <div class="sponser-container">
-                <h2>Partners</h2>
-                <hr class="underline">
+<!-- -----------------------------main program-------------------------------- -->
 
-                <ul class="sponser-list">
-                    <li>
-                        <a href="https://www.microsoft.com"><img class="sponser-logo" src="./imgs/microsoft-logo.png"
-                                alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://www.google.com"><img class="sponser-logo" src="./imgs/google-logo.png"
-                                alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://www.airbnb.com"><img class="sponser-logo" src="./imgs/airbnb-logo.png"
-                                alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://www.mozilla.org"><img class="sponser-logo" src="./imgs/mozila-logo.webp"
-                                alt=""></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- footer -->
-        <footer class="footer">
-            <a href="./index.html" class=" logo"><img src="./imgs/logoimg.jpg" alt="ICFP-Logo" /></a>
-            <p>2023 | International Conference on Functional Programming</p>
-        </footer>
-        <script src="index.js"></script>
+    <section class="program">
+      <div class="program-container">
+        <h2 class="main-program">Main Program</h2>
+        <div class="line"></div>
+        <div class="method-container">
+          <article class="method"> 
+            <i class="fa-solid fa-person-chalkboard method-icon"></i>
+            <h3 class="method-title">Exhibition</h3>
+            <p class="method-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente nesciunt dolores!</p>
+          </article>
+          <article class="method"> 
+            <i class="fa-solid fa-chalkboard-user method-icon"></i>
+            <h3 class="method-title">Forum</h3>
+            <p class="method-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente nesciunt dolores!</p>
+          </article>
+          <article class="method"> 
+            <i class="fa-solid fa-comments-dollar method-icon"></i>
+            <h3 class="method-title">Community</h3>
+            <p class="method-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente nesciunt dolores!</p>
+          </article>
+          <article class="method"> 
+            <i class="fa-solid fa-handshake-angle method-icon"></i>
+            <h3 class="method-title">Feedback</h3>
+            <p class="method-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente nesciunt dolores!</p>
+          </article>
+        </div>
+        <button type="submit" class="button-join">Join ICFP</button>
+        <a href="#" class="button-desktop">SEE THE WHOLE COURSE</a>
+      </div>
+    </section>
+
+<!-- -----------------------------speakers-------------------------------- -->
+  
+<section>
+  <div class="speakers" id="speakers">
+    <h2>Featured speakers</h2>
+    <div class="line"></div>
+  </div>
+  <div class="speakers-container" id="speakers-container"></div>
+</section>
+
+<!-- -----------------------------patners-------------------------------- -->
+
+    <section class="partners partner-home">
+      <h3 class="partner">Patner</h3>
+      <div class="line"></div>
+      <div class="patners-logo">
+        <i class="fa-brands fa-google patner-logo"></i>
+        <i class="fa-brands fa-facebook patner-logo"></i>
+        <i class="fa-brands fa-square-github patner-logo"></i>
+        <i class="fa-brands fa-twitter patner-logo"></i>
+        <i class="fa-brands fa-instagram patner-logo"></i>
+      </div>
+    </section>
+  </main>
+<!-- -----------------------------footer-------------------------------- -->
+  <footer>
+    <div class="footer footer-home">
+      <img src="./imgs/logoimg.jpg" class="footer-logo" alt="Microverse logo">
+      <p class="copy-right">2023 | International Conference on Functional Programming.</p>
+    </div>
+  </footer>
+  
+  <script src="index.js"></script>
 </body>
-
 </html>
