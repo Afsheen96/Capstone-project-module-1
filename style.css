@@ -6,9 +6,11 @@
   text-decoration: none;
   list-style: none;
 }
+
 :root {
   --red: #ec5242;
 }
+
 nav {
   background: rgba(211, 211, 211, 0.4);
 }
@@ -74,21 +76,21 @@ nav {
 }
 
 .title {
-  background-clip: text;
   -webkit-background-clip: text;
   background-image: url(./imgs/heading-img.jfif);
   font-size: 40px;
   color: transparent;
-   padding-top: 10px;
+  padding-top: 10px;
 }
+
 .about-title {
-  background-clip: text;
   -webkit-background-clip: text;
   background-image: url(./imgs/heading-img.jfif);
   font-size: 40px;
   color: transparent;
-   padding-top: 73px;
+  padding-top: 73px;
 }
+
 .information {
   font-size: 16px;
   width: 100%;
@@ -659,6 +661,7 @@ h4 {
   .footer-about p {
     color: #d3d3d3;
   }
+
   .about-copyright {
     padding-left: 24px;
   }

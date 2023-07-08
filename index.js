@@ -13,7 +13,7 @@ menu.addEventListener('click', closeMenu);
 const speakers = document.getElementById('speakers-container');
 
 const speakerData = [
- 
+
   {
     img: './imgs/speaker1.png',
     name: 'Bill Gates',
