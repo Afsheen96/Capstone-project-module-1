@@ -56,7 +56,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://afsheen96.github.io/Portfolio)
+- [Live Demo Link](https://afsheen96.github.io/Capstone-project-module-1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
