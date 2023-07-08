@@ -38,6 +38,18 @@ const speakerData = [
     company: 'Software Engineer!',
     subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
   },
+  {
+    img: './imgs/speaker4.png',
+    name: 'Zhao',
+    company: 'Software Engineer!',
+    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+  },
+  {
+    img: './imgs/speaker4.png',
+    name: 'Zhao',
+    company: 'Software Engineer!',
+    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+  },
 ];
 
 if (speakers) {
