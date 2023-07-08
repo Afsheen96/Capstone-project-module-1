@@ -162,8 +162,7 @@ people.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for their unique way of teaching me how to code, and also Freecodecamp and w3school for their practical articles that helped me to
-make this project.
+This project is made by using the Cindy Shin template on Behance
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
