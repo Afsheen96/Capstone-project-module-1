@@ -56,7 +56,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://afsheen96.github.io/Portfolio)
+- [Live Demo Link](https://afsheen96.github.io/Capstone-project-module-1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,8 +162,7 @@ people.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for their unique way of teaching me how to code, and also Freecodecamp and w3school for their practical articles that helped me to
-make this project.
+This project is made by using the Cindy Shin template on Behance
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <script
+      src="https://kit.fontawesome.com/e520ead38a.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="topnav">
+        <i class="fa-brands fa-facebook-f social-icon"></i>
+        <i class="fa-brands fa-twitter social-icon"></i>
+        <ul class="topnav-list">
+          <li class="top-links">English</li>
+          <li class="top-links">MyPage</li>
+          <li class="top-links">Logout</li>
+        </ul>
+      </div>
+      <div class="main-nav">
+        <a href="index.html"><img src="./imgs/logoimg.jpg" class="logo" alt="ICFP Logo"></a>
+        <ul class="menu-mobile" id="menu">
+          <li class="mobile-menu" onclick="closeMenu()"><a href="./index.html">Home</a></li>
+          <li class="mobile-menu" onclick="closeMenu()"><a href="#">Program</a></li>
+          <li class="mobile-menu" onclick="closeMenu()"><a href="#">Join</a></li>
+          <li class="mobile-menu" onclick="closeMenu()"><a href="#">Sponsor</a></li>
+          <li class="mobile-menu" onclick="closeMenu()"><a href="#">News</a></li>
+          <li><i class="fa-solid fa-xmark close" onclick="closeMenu()"></i></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu-link"><a href="./index.html">Home</a></li>
+          <li class="menu-link"><a href="#">Program</a></li>
+          <li class="menu-link"><a href="#">Join</a></li>
+          <li class="menu-link"><a href="#">Sponsor</a></li>
+          <li class="menu-link"><a href="#">News</a></li>
+          <li><button type="button" class="button">CC Campaign</button></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars open" onclick="openMenu()"></i>
+    </nav>
+  </header>
+  <main>
+    <section class="body">
+      <article class="about-body">
+        <h1 class="about-title">International Conference <br>on Functional Programming.</h1>
+        <article class="about-information">
+          <p class="about-info-mobile">The International Conference on Functional Programming (ICFP) is an annual academic conference in the field of computer science sponsored by the ACM SIGPLAN, in association with IFIP Working Group. The conference focuses on functional programming and related areas of programming languages, logic, compilers and software development.</p>
+          <p class="about-info-desktop">The International Conference on Functional Programming (ICFP) is an annual academic conference in the field of computer science sponsored by the ACM SIGPLAN, in association with IFIP Working Group. The conference focuses on functional programming and related areas of programming languages, logic, compilers and software development.</p>
+        </article>
+        <p class="contact-info">Please Contact Us through Email, if you have any question about ICFP.</p>
+        <a href="#" class="email"><strong>info@icfpcontest.com</strong></a>
+      </article>
+      <div class="long-line"></div>
+<!-- ---------------------------logo section------------------------ -->
+      <section class="logo-section">
+        <h3 class="about-headings">ICFP 2023 Logo</h3>
+        <div class="line"></div>
+        <p class="about-para">The logo of CodingCon 2023 was decided through a competition among logo designers from all over the world. 
+          The logo was decided based on the logo competition's results.</p>
+        <div class="logo-border">
+          <img src="./imgs/logoimg.jpg" alt="Microverse logo" class="logo2">
+        </div>
+      </section>
+      <div class="long-line"></div>
+<!-- -----------------------------graduate students---------------------------- -->
+      <section class="alumni">
+        <h3 class="about-headings">See the past ICFP Winning Teams</h3>
+        <div class="line"></div>
+        <p class="about-para">Take a look at the last two ICFP Events</p>
+        <div class="students-image">
+          <div class="image">
+            <img src="./imgs/win1.jpg" alt="graduation 2022" class="graduate">
+            <div class="image-info">
+              <h4>2019</h4>
+              <p class="image-p">ICFP 2019 Winners</p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="./imgs/win2.jpg" alt="graduation 2021" class="graduate">
+            <div class="image-info">
+              <h4>2020</h4>
+              <p class="image-p">ICFP 2020 Winners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners partner-about">
+        <h3 class="partner">Partner</h3>
+        <div class="line"></div>
+        <div class="patners-logo">
+          <i class="fa-brands fa-google patner-logo"></i>
+          <i class="fa-brands fa-facebook patner-logo"></i>
+          <i class="fa-brands fa-square-github patner-logo"></i>
+          <i class="fa-brands fa-twitter patner-logo"></i>
+          <i class="fa-brands fa-instagram patner-logo"></i>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="footer footer-about">
+        <img src="./imgs/logoimg.jpg" class="footer-logo" alt="Microverse logo">
+        <p class="copy-right about-copyright">2023 | International Conference on Functional Programming.</p>
+      </div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
