@@ -1,13 +1,16 @@
 const menu = document.getElementById('menu');
 
 function openMenu() {
-  menu.style.display = 'flex';
+  if (menu.style.display = 'none') {
+    menu.style.display = 'flex';
+  }
 }
 
 function closeMenu() {
-  menu.style.display = 'none';
+  if (menu.style.display = 'flex') {
+    menu.style.display = 'none';
+  }
 }
-
 menu.addEventListener('click', openMenu);
 menu.addEventListener('click', closeMenu);
 const speakers = document.getElementById('speakers-container');
@@ -15,40 +18,40 @@ const speakers = document.getElementById('speakers-container');
 const speakerData = [
 
   {
-    img: './imgs/speaker1.png',
-    name: 'Bill Gates',
+    speakerImg: './imgs/speaker1.png',
+    speakerName: 'Bill Gates',
     company: 'Software Engineer!',
-    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+    speakerSubject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
   },
   {
-    img: './imgs/speaker2.png',
-    name: 'Elon Musk',
-    company: 'Software Engineer!',
-    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+    speakerImg: './imgs/speaker2.png',
+    speakerName: 'Elon Musk',
+    speakerPost: 'Software Engineer!',
+    speakerSubject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
   },
   {
-    img: './imgs/speaker3.png',
-    name: 'Steve Jobs',
-    company: 'Software Engineer!',
-    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+    speakerImg: './imgs/speaker3.png',
+    speakerName: 'Steve Jobs',
+    speakerPost: 'Software Engineer!',
+    speakerSubject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
   },
   {
-    img: './imgs/speaker4.png',
-    name: 'Zhao',
-    company: 'Software Engineer!',
-    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+    speakerImg: './imgs/speaker4.png',
+    speakerName: 'Zhao',
+    speakerPost: 'Software Engineer!',
+    speakerSubject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
   },
   {
-    img: './imgs/speaker4.png',
-    name: 'Zhao',
-    company: 'Software Engineer!',
-    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+    speakerImg: './imgs/speaker4.png',
+    speakerName: 'Zhao',
+    speakerPost: 'Software Engineer!',
+    speakerSubject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
   },
   {
-    img: './imgs/speaker4.png',
-    name: 'Zhao',
-    company: 'Software Engineer!',
-    subject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
+    speakerImg: './imgs/speaker4.png',
+    speakerName: 'Zhao',
+    speakerPost: 'Software Engineer!',
+    speakerSubject: 'Quae voluptate similique doloremque voluptatem debitis neque at, est amet incidunt? Nobis.',
   },
 ];
 
@@ -56,12 +59,12 @@ if (speakers) {
   for (let i = 0; i < speakerData.length; i += 1) {
     speakers.innerHTML += `
       <article class= "speakers-sample">
-        <img src="${speakerData[i].img}" class="speakers-images" alt="speakers Gates photo">
+        <img src="${speakerData[i].speakerImg}" class="speakers-images" alt="speakers Gates photo">
         <div class= "speakers-info">
-          <h3 class= "speakers-name">${speakerData[i].name}</h3>
-          <p class= "speakers-company">${speakerData[i].company}</p>
+          <h3 class= "speakers-name">${speakerData[i].speakerName}</h3>
+          <p class= "speakers-company">${speakerData[i].speakerPost}</p>
           <div class="short-line"></div>
-          <p class= "speakers-subject">${speakerData[i].subject}</p>
+          <p class= "speakers-subject">${speakerData[i].speakerSubject}</p>
         </div>
       </article>`;
   }
